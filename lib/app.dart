@@ -8,6 +8,7 @@ import 'package:isango_app/screens/settings/settings_screen.dart';
 import 'package:isango_app/screens/submit/submit_screen.dart';
 import 'core/constants/app_routes.dart';
 import 'core/theme/app_theme.dart';
+import 'package:isango_app/screens/auth/verify_email_screen.dart';
 
 class IsangoApp extends StatelessWidget {
   const IsangoApp({super.key});
@@ -20,6 +21,8 @@ class IsangoApp extends StatelessWidget {
       theme: AppTheme.light(),
       initialRoute: AppRoutes.splash,
       routes: {
+        AppRoutes.signUp: (context) => const SignupScreen(),
+AppRoutes.verifyEmail: (context) => const VerifyEmailScreen(),
         AppRoutes.splash: (context) => const AuthGate(),
         AppRoutes.login: (context) => const LoginScreen(),
         AppRoutes.signUp: (context) => const SignupScreen(),

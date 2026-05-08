@@ -68,7 +68,7 @@ class _SignupScreenState extends State<SignupScreen> {
         password: _passwordController.text,
       );
       if (!mounted) return;
-      Navigator.pushReplacementNamed(context, AppRoutes.home);
+      Navigator.pushReplacementNamed(context, AppRoutes.verifyEmail);
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
